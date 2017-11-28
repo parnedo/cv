@@ -1,0 +1,168 @@
+%% start of file `template_en.tex'.
+%% Copyright 2007 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+
+% character encoding
+
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.852]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+
+% personal data
+\firstname{Pedro}
+\familyname{Arnedo}
+\title{Senior Software Engineer}        % optional, remove the line if not wanted
+\address{10 Conwell St.}{02143, Somerville, MA}    % optional, remove the line if not wanted
+\mobile{(+1) 617.380.8837}                            % optional, remove the line if not wanted
+% \phone{phone (optional)}                    % optional, remove the line if not wanted
+% \fax{fax (optional)}                        % optional, remove the line if not wanted
+\email{parnedo@gmail.com}                      % optional, remove the line if not wanted
+% \extrainfo{additional information (optional)} % optional, remove the line if not wanted
+\photo[40pt]{fotoCarnet.jpg}                % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+% \quote{Some quote (optional)}               % optional, remove the line if not wanted
+
+\nopagenumbers{}                              % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\hyphenation{Fa-cul-tad}
+
+\section{Education}
+\cventry{2009--2010}{Master II "Security, Cryptology and Coding of Information Systems"}{ENSIMAG}{Grenoble}{}{}
+\cventry{2008--2010}{Double degree, speciality "Ingénierie des Systèmes d'Information"}{ENSIMAG}{Grenoble}{}{}
+% \cventry{year--year}{Degree}{Institution}{City}{\textit{Grade}}{Description}  % arguments 3 to 6 are optional
+\cventry{2001--2008}{Computer Engineering}{Universidad Politécnica de Madrid}{Madrid}{}{}
+%\cventry{2007--2008}{Scholar at the UPM Software Engineering department}{Facultad de Informática, U.P.M}{Madrid}{}{Working with Php, css, xhtml, linux, LAMP}
+%\cventry{2005--2006}{Scholar of the ACM student chapter association}{Facultad de Informática, U.P.M}{Madrid}{}{}
+%\cventry{2004--2005}{Scholar of internet courses production and Tecnical Service at GATE}{Facultad de Informática, U.P.M}{Madrid}{}{}
+
+\section{Trainings and certifications}
+\cventry{2017}{Management Development for New managers/Supervisors}{Amadeus}{Boston}{}{}
+\cventry{2015}{MongoDB certification}{Amadeus}{Nice}{}{}
+\cventry{2014}{Scrum master certification}{Amadeus}{Nice}{}{}
+\cventry{2013}{Oracle optimization}{Amadeus}{Nice}{}{}
+
+\section{Professional Experience}
+% \cventry{year--year}{Job title}{Employer}{City}{}{Description}  % arguments 3 to 6 are optional
+\cventry{2015-Present}{Amadeus North America employee in Hotel department}{Senior Software Developer}{C++, Oracle, Python, Javascript}{}{}
+\cventry{2014-2015}{Amadeus North America employee in Hotel department}{Software Developer}{}{}{}
+\cventry{2010-2014}{Amadeus S.A.S employee in Hotel department}{Software Developer}{}{}{}
+\cventry{2012-2016}{Creator of Scan\& android application}{New communication technology based on qr codes}{}{}{}%{www.scanand.com}{Currently on beta}{}
+\cventry{2010}{Computer security internship at Beihang University}{Specialization in computer security}{Sensor Networks, distributed security}{}{}
+\cventry{2009}{6-month internship "Refonte de l'IHM d'EGIPTE"}{Atos Origin}{Meylan}{}{Used technologies: C++, QT, boost, metaprogramming}
+%\cventry{2007--2008}{6 months of internship at the "Software Ingeniering" department}{Facultad de Informática, U.P.M}{Madrid}{}{Used technologies: Php, css, xhtml, linux, LAMP}
+% \cventry{2006--2008}{Wifi security, WEP weakness, how to secure your net,\dots}{Speaker}{Facultad de Informática, U.P.M}{Madrid}{ and courses at the UPM as member of ACM student chapter}
+% \cventry{2005--2008}{Instant Messenger OpenSource library LibImMsnP}{Mantainer and main developer}{}{}{LibImMsnp belongs to kinapsis-libs, \htmladdnormallink{http://developer.berlios.de/projects/kinapsis-libs}{http://developer.berlios.de/projects/kinapsis-libs/}}
+%
+% \cventry{2006--2008}{Python programming, GUI and quick scripting}{Speaker}{Facultad de Informática, U.P.M}{Madrid}{talks and courses at the UPM as member of ACM student chapter}
+% \cventry{2006}{Fourth edition of the CUPCAM programming contest}{Computer installation and configurations responsible}{Facultad de Informática, U.P.M}{Madrid}{\htmladdnormallink{http://www.fi.upm.es/cupcam2006}{http://www.fi.upm.es/cupcam2006/}}
+% \cventry{2005--2007}{C language}{Speaker}{Facultad de Informática, U.P.M}{Madrid}{talks and courses at the UPM as member of ACM student chapter}
+% \cventry{2004--2007}{Linux Operating System use and administration}{Speaker}{Facultad de Informática, U.P.M}{Madrid}{talks and courses at the UPM as member of ACM student chapter}
+
+
+\section{Languages}
+% \cvlanguage{language 1}{Skill level}{Comment}
+\cvlanguage{Spanish}{\small{Mother tongue}}{}
+\cvlanguage{French}{\small{Bilingual}}{}
+\cvlanguage{English}{\small{Fluent}}{}
+
+
+\section{Skills Base}
+\cvcomputer{Amadeus}{\textbf{Backends, Middleware}, Batch daemons}{SI} {SI Configurations, Load procedures TST, PRD}
+\cvcomputer{Methodologies}{\textbf{Scrum}, kanban, cascade}{}{}
+%\cvcomputer{SO}{\textbf{Gnu/Linux}, Windows, MacOS X}{Web design}{\textbf{XHTML}, PHP, CSS 2.0}
+\cvcomputer{Languages}{\textbf{C/C++(QT, stl, boost)}, \textbf{Python}, Haskell, ADA95 , Java, Visual basic .NET}{Databases}{\textbf{Oracle}, MySQL}
+% \cvcomputer{Others}{Prolog, VHDL, \textbf{\textbf{\LaTeX}}}{BD}{\textbf{MySQL}}
+%\cvcomputer{Scripting}{\textbf{Python, shellScript}}{Utilities}{\textbf{The Gimp, vim, Eclipse}}
+\cvcomputer{Scripting}{\textbf{Python, shellScript}}{Utilities}{\textbf{vim}, valgrind, gtest, gmock}
+
+\section{Projects at Amadeus}
+\cventry{2014-Present}{Rate Management System for IHG}{Implementation of the new functionalities needed by intercontinental related to the management of rates}{Currently under development}{C++, Oracle, protobuf}{}
+\cventry{2016}{Setup of a database viewer for the rates management data}{The data viewer abstracts the database by showing all the data for a given object no matter what are the tables in which it's stored.}{Pyhton, JQuery, Bootstrap, d3js}{}{}
+\cventry{2015}{Monitoring Rate Management performances}{Setup of a system using ELK to monitor the performances of the rate management services.}{}{}{}
+\cventry{2014-Present}{Mentoring activities}{Mentoring of the newcommers so they can become productive members of the team in a reduced amount of time, at a rate up to 2 by month}{}{}{}
+\cventry{2014-Present}{Recruitment activities}{Helping in the recruitment process by performing technical C++ interviews to senior and junior candidates}{}{}{}
+\cventry{2014}{Rate Management (RTM) extraction from shopping and pricing component (HRP)}{Takeover and refactoring of the component; Implementation of new functionalities for IHG GRS future system}{}{}{}
+\cventry{2014}{Unified Search}{Performance study and monitoring}{}{}{}
+\cventry{2013}{Unified Search}{Consolidation of all search and retrieve reservation services in AHP platform in a single service}{}{}{}
+\cventry{2013}{Evoucher new search prototype}{Prototype based on a revisited architecture demonstrating major improvements in response time and scalability potential in terms of volume of data and throughput}{}{}{}
+\cventry{2013}{Evoucher}{Release notes and communication}{EVR is a core middleware used by 5 different teams across AHP, a release notes system has been put in place to improve communication}{}{}
+\cventry{2013}{Evoucher Audit}{Audit performed in a core middleware component of AHP CRS}{Objective accomplished exceeding targets}{}{}
+\cventry{2013}{Search and retrieve reservations backend}{Implementation of versioning, providing 30 different combinations of services}{}{}{}
+\cventry{2012}{Search and retrieve reservation backend (SLR) extraction from hosted reservation component (HRS)}{Takeover and refactoring of the component; An architecture that allows modularity, readability, extensibility has been put in place as well as a design that facilitates the maintenance}{}{}{}
+\cventry{2012}{User profile backend}{Implementation of profile linking functionality}{Despite having to depend on other departments the project was delivered on time}{}{}
+\cventry{2011}{Switch implementation for Travelport}{Help in PTR fixing to keep the project on track}{The PTR backlog was drastically reduced}{}{}
+\cventry{2011}{External booking integrator custom Amadeus services}{I've fully implemented the sell/modify/cancel services for one step booking and booking notification interfaces}{Project fully delivered on time}{}{}
+\cventry{2010}{User profiles backend}{Development of a python script to patch profiles in production}{The script has been used to delete comments made by the Hotelier that contains credit cards data}{it allows us to clean the PRD database from 10k credit cards in clear text}{}
+\cventry{2010}{User profiles backend}{Implementation of new version of the service that connects with ESS and PGW}{Project fully delivered on time}{}{}
+
+\section{Some projects completed during my studies at UPM}
+\cventry{2007-2008}{C compiler written in python language}{}{}{}{}
+%\cventry{2008}{}{Usability design and test of a class distributor for the Facultad de Informática - UPM}{}{}{}
+%\cventry{2008}{Remote `dir` command for distributed course}{}{}{}{}
+%\cventry{2007-2008}{Planification of a project following the TSPi standard}{}{}{}{One year practice with four other people}
+\cventry{2007}{Minikernel programming with basic functions}{}{}{}{}
+%\cventry{2006}{}{Mathematical interpoling of GPS coordinates using real data (file .sp3)}{}{}{}
+\cventry{2005-2006}{}{I/O polling and interruption programming in assembler into a MC68000 processor, RAM memory and a MC68681 DUART}{}{}{}
+\cventry{2003-2004}{}{Cache memory management in a 88110 processor}{}{}{}
+%\cventry{2003}{}{Disperse matrix handling in 88110 Assembler}{}{}{}
+%\cventry{2003}{}{Sokoban game design and programming in ada95}{}{}{}
+\cventry{2002}{Microcode binary programming of intel i8080}{}{}{}{}
+%\cventry{2002}{Minishell in C language (pipes, background, autocompletion, ...)}{}{}{}{}
+
+%\section{Publications}
+%\cventry{2007}{C programming language introduction guide}{Written with other ACM members}{}{}{\htmladdnormallink{http://acm.asoc.fi.upm.es/documentos/c2007/manual.pdf}{http://acm.asoc.fi.upm.es/documentos/c2007/manual.pdf}}
+\section{Community Live}
+\cventry{2007--2008}{President of the ACM student chapter association}{}{Facultad de Informática, U.P.M}{Madrid}{}
+\cventry{2006--2007}{Vice-President of the ACM student chapter association}{}{Facultad de Informática, U.P.M}{Madrid}{}
+
+\section{Other interesting information}
+%\cventry{-}{Owner of driving license type B}{}{}{}{}
+\cventry{-}{Amateur snowboard and amateur scuba diving}{}{}{}{}
+%\cventry{-}{Amateur photographer, work group and Linux lover}{}{}{}{}
+\cventry{-}{Easy-going, friendly, responsible and reliable}{}{}{}{}
+%%\cventry{}{}{}{}{}{}
+%% \section{Aficiones}
+%% % \cvline{hobby 1}{\small Description}
+%% \cvline{Guitarra}{\small Formación elemental tanto de Guitarra Clásica como de Solfeo}
+%% \cvline{Pintura}{\small Asistencia a cursos de pintura durante un periodo de 5 años}
+%% \cvline{Deportes}{\small Aficionado a todos los deportes. Practico paddle, fútbol y baloncesto}
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem[+]{Item 3}            % optional other symbol
+
+% \section{Extra 2}
+% \cvlistdoubleitem[\Neutral]{Item 1}{Item 4}
+% \cvlistdoubleitem[\Neutral]{Item 2}{Item 5}
+% \cvlistdoubleitem[\Neutral]{Item 3}{}
+
+% Publications from a BibTeX file
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template_en.tex'.
