@@ -18,7 +18,7 @@
 
 % adjust the page margins
 \usepackage[scale=0.852]{geometry}
-\recomputelengths                             % required when changes are made to page layout lengths
+\recomputelengths                            % required when changes are made to page layout lengths
 
 % personal data
 \firstname{Pedro}
@@ -61,7 +61,8 @@
 
 \section{Professional Experience}
 % \cventry{year--year}{Job title}{Employer}{City}{}{Description}  % arguments 3 to 6 are optional
-\cventry{2015-Present}{Amadeus North America employee in Hotel department}{Senior Software Developer}{C++, Oracle, Python, Javascript}{}{}
+\cventry{2018-Present}{Localytics employee in CS department}{Senior Solution Architect}{Python, AWS, serverless, Flask, Vue.js}{}{}
+\cventry{2015-2018}{Amadeus North America employee in Hotel department}{Senior Software Developer}{C++, Oracle, Python, Javascript}{}{}
 \cventry{2014-2015}{Amadeus North America employee in Hotel department}{Software Developer}{}{}{}
 \cventry{2010-2014}{Amadeus S.A.S employee in Hotel department}{Software Developer}{}{}{}
 \cventry{2012-2016}{Creator of Scan\& android application}{New communication technology based on qr codes}{}{}{}%{www.scanand.com}{Currently on beta}{}
@@ -85,20 +86,28 @@
 
 
 \section{Skills Base}
-\cvcomputer{Amadeus}{\textbf{Backends, Middleware}, Batch daemons}{SI} {SI Configurations, Load procedures TST, PRD}
-\cvcomputer{Methodologies}{\textbf{Scrum}, kanban, cascade}{}{}
 %\cvcomputer{SO}{\textbf{Gnu/Linux}, Windows, MacOS X}{Web design}{\textbf{XHTML}, PHP, CSS 2.0}
-\cvcomputer{Languages}{\textbf{C/C++(QT, stl, boost)}, \textbf{Python}, Haskell, ADA95 , Java, Visual basic .NET}{Databases}{\textbf{Oracle}, MySQL}
+\cvcomputer{Languages}{\textbf{C/C++(QT, stl, boost)}, \textbf{Python}, Haskell, ADA95 , Java, Visual basic .NET}{Databases}{\textbf{Snowflake, Oracle}, MySQL}
+\cvcomputer{DevOps}{\textbf{AWS, Terraform, Docker}, Kubernetes, serverless}{}{}
 % \cvcomputer{Others}{Prolog, VHDL, \textbf{\textbf{\LaTeX}}}{BD}{\textbf{MySQL}}
 %\cvcomputer{Scripting}{\textbf{Python, shellScript}}{Utilities}{\textbf{The Gimp, vim, Eclipse}}
 \cvcomputer{Scripting}{\textbf{Python, shellScript}}{Utilities}{\textbf{vim}, valgrind, gtest, gmock}
+\cvcomputer{Methodologies}{\textbf{Scrum}, kanban, cascade}{}{}
+%\cvcomputer{Amadeus}{\textbf{Backends, Middleware}, Batch daemons}{SI} {SI Configurations, Load procedures TST, PRD}
+
+\section{Projects at Localytics}
+\cventry{2019}{Drop to API}{System where clients drop a file, we parse, transform it and call rest APIs}{Python, AWS lambda, AWS ECS fargate, Terraform, Snowflake}{}{}
+\cventry{2019}{Jira to Salesforce sync}{Internal tooling that allows us to sync time entries, projects, org data, Jira Issues from and to salesforce}{Jira, Salesforce, Python}{}{}
+\cventry{2018}{Throttling system}{Implementation of a throttling system when calling an API to avoid impacting clients infraestructure}{Python, AWS, Elastick Beanstalk, Terraform}{}{}
+\cventry{2018}{Basket Rules}{Implementation of a-priory algorithm with UI and backend to generate recomendation rules for Media and Retail customers}{Snowflake, Python, AWS API Gateway, AWS lambda, AWS Elastick Beanstalk, Terraform}{}{}
+\cventry{2018}{Reporting framework}{Reporting generation engine that allows us to generate custom reports from several sources of data and to several destinations}{Python, Kubernetes Cronjobs, Docker}{}{}
 
 \section{Projects at Amadeus}
-\cventry{2014-Present}{Rate Management System for IHG}{Implementation of the new functionalities needed by intercontinental related to the management of rates}{Currently under development}{C++, Oracle, protobuf}{}
+\cventry{2014-2018}{Rate Management System for IHG}{Implementation of the new functionalities needed by intercontinental related to the management of rates}{Currently under development}{C++, Oracle, protobuf}{}
 \cventry{2016}{Setup of a database viewer for the rates management data}{The data viewer abstracts the database by showing all the data for a given object no matter what are the tables in which it's stored.}{Pyhton, JQuery, Bootstrap, d3js}{}{}
 \cventry{2015}{Monitoring Rate Management performances}{Setup of a system using ELK to monitor the performances of the rate management services.}{}{}{}
-\cventry{2014-Present}{Mentoring activities}{Mentoring of the newcommers so they can become productive members of the team in a reduced amount of time, at a rate up to 2 by month}{}{}{}
-\cventry{2014-Present}{Recruitment activities}{Helping in the recruitment process by performing technical C++ interviews to senior and junior candidates}{}{}{}
+\cventry{2014-2018}{Mentoring activities}{Mentoring of the newcommers so they can become productive members of the team in a reduced amount of time, at a rate up to 2 by month}{}{}{}
+\cventry{2014-2018}{Recruitment activities}{Helping in the recruitment process by performing technical C++ interviews to senior and junior candidates}{}{}{}
 \cventry{2014}{Rate Management (RTM) extraction from shopping and pricing component (HRP)}{Takeover and refactoring of the component; Implementation of new functionalities for IHG GRS future system}{}{}{}
 \cventry{2014}{Unified Search}{Performance study and monitoring}{}{}{}
 \cventry{2013}{Unified Search}{Consolidation of all search and retrieve reservation services in AHP platform in a single service}{}{}{}
