@@ -1,19 +1,21 @@
 \documentclass[11pt,a4paper]{moderncv}
-
 \moderncvtheme[blue]{classic}
 
 \usepackage[utf8]{inputenc}
-\usepackage[scale=0.852]{geometry}
+\usepackage[scale=0.85]{geometry}
 \recomputelengths
 
-% personal data
+% Personal data
 \firstname{Pedro}
 \familyname{Arnedo}
 \title{Principal Software Engineer}
-\address{47 standish rd. Unit 1}{02151, Revere, MA}
-\mobile{(+1) 617.380.8837}
+\address{Avenida Solidaridad 22 11G}{26003, Logrono, Spain}
+\mobile{(+34) 67.68.17.01}
 \email{parnedo@gmail.com}
-\photo[40pt]{fotoCarnet.jpg}
+\social[linkedin][www.linkedin.com/in/parnedo]{parnedo}
+\social[github][github.com/parnedo]{parnedo}
+
+% \photo[40pt]{fotoCarnet.jpg} % Commented out for modern, ATS-friendly layout
 
 \nopagenumbers{}
 
@@ -21,62 +23,95 @@
 \maketitle
 
 \section{Summary}
-\cvitem{}{Seasoned Software Engineer with 12+ years of experience building high-performance distributed systems and scalable backend architectures. Expert in Python ecosystem with deep experience in asyncio, concurrent programming, and system optimization. Proven track record in building engineering teams from ground up, leading technical initiatives, and transforming legacy systems into modern architectures. Known for combining technical excellence with strategic thinking to deliver robust solutions that drive business growth.}
+\cvitem{}{
+Software Engineer with over 12 years of experience building and scaling distributed systems, leading cloud-native architecture modernization, and growing high-performing engineering teams. I specialize in Python (asyncio) and C++, with deep expertise in microservices, observability, and developer experience. Passionate about designing reliable, scalable systems and mentoring engineers in Agile environments. Proven success delivering impact in fast-paced, cross-functional, and remote teams.
+}
+\cvitem{}{
+  I have dual Spanish-American citizenship, currently based in Spain and open to international opportunities.
+}
 
-\section{Professional Experience}
-\cventry{2020--Present}{Principal Software Engineer}{Scuba Analytics}{Boston, MA}{}{
+
+\section{Experience}
+\cventry{May 2022 -- Present}{Principal Software Engineer}{Scuba Analytics}{Boston, MA (Remote)}{}{
 \begin{itemize}
-\item Pioneered engineering efforts as the first engineer, successfully reverse-engineering and documenting existing codebase to enable team scaling
-\item Led technical hiring initiatives, growing engineering team from 1 to 18 members while maintaining high technical standards and team culture
-\item Architected and implemented comprehensive alerting system, enabling proactive monitoring of customer-defined metrics
-\item Spearheaded complete API redesign, improving system maintainability and reducing client integration time by 40\%
-\item Enhanced data ingestion system by implementing BigQuery integration, expanding platform capabilities and increasing data source options for customers
-\item Created extensive technical documentation, facilitating knowledge transfer and reducing onboarding time for new team members
+\item Implemented and alerting and monitoring system able to send insights to diverse patforms like Slack or MSteams. The system included several API endpoints, a MYSQL DDL, a guaranteed delivery subsystem and customer documentation.
+\item Authored technical documentation and architecture reviews. Lead a python guild, and coordinated several functional discoveries for new features, going from product discovery to deploymnet in production.
+\item Improved performance of the REST APIs by implementing a custom caching mechanist using redis and in-memory caching. Improving by several orders of magnitude the performance and response time of the APIs.
+\item \textbf{Tech Stack:} Python 3.9+, Redis, Python asyncio, SQL
 \end{itemize}
-\textbf{Technology Stack:} Python 3.9+, asyncio, MySQL, BigQuery, Redis}
+}
 
-\cventry{2018--2020}{Senior Solution Architect}{Localytics}{Boston, MA}{}{
+\cventry{July 2020 -- April 2022}{Senior Software Engineer}{Scuba Analytics}{Boston, MA (Remote)}{}{
 \begin{itemize}
-\item Architected and implemented cloud-native data processing pipeline handling 100K+ daily file uploads using AWS Lambda, ECS Fargate, and Snowflake
-\item Led development of basket analysis system using a-priori algorithm, increasing customer recommendations accuracy by 35\%
-\item Designed and built enterprise integration system synchronizing data between Jira and Salesforce, reducing manual work by 80\%
-\item Implemented throttling system for API calls, reducing infrastructure costs by 40\% while maintaining SLAs
+\item Pioneered engineering efforts as the first hire, reverse-engineering and documenting legacy systems to enable scale.
+\item Led technical hiring and guided a team of 18 engineers, maintaining strong engineering culture and high standards.
+\item Led API redesign, going from a monolitic API to a more granular REST API design, improving maintainability and monitoring.
+\item Integrated BigQuery for data ingestion in the current ingestion subsystem, broadening the analytics platform’s reach. Giving Scuba the posibility to get both intraday and daily data from tables like the ones generated by GA4.
+\item \textbf{Tech Stack:} Python 3.9+, MySQL, BigQuery
 \end{itemize}
-\textbf{Technology Stack:} Python, Flask, Vue.js, AWS (Lambda, ECS Fargate, API Gateway), Snowflake, Terraform, Docker}
+}
 
-\cventry{2015--2018}{Senior Software Developer}{Amadeus North America}{Boston, MA}{}{
+\cventry{February 2018 -- July 2020}{Senior Solution Architect}{Localytics}{Boston, MA}{}{
 \begin{itemize}
-\item Led development of Rate Management System for IHG, handling millions of daily rate calculations
-\item Created performance monitoring system using ELK stack, improving system reliability by 25\%
-\item Mentored 20+ junior developers and conducted technical interviews for senior positions
-\item Developed database visualization tool reducing debugging time by 50\%
+\item Designed and built a scalable cloud-native ETL pipeline handling 100K+ files/day (AWS Lambda, Fargate).
+\item Built enterprise integration between Jira and Salesforce, reducing manual work nearly completelly.
+\item Led product development of basket analysis system using algorithms like A-Priory, boosting recommendation accuracy and helping sales open more leads.
+\item \textbf{Tech Stack:} Python, Flask, AWS (Lambda, ECS, API Gateway), Snowflake, Terraform, Docker
 \end{itemize}
-\textbf{Technology Stack:} C++14/17, STL, Boost, Python, Oracle, ELK Stack, Jenkins, Linux}
+}
 
-\cventry{2010--2015}{Software Developer}{Amadeus S.A.S}{Nice, France}{}{
+\cventry{August 2014 -- January 2018}{Senior Software Developer}{Amadeus North America}{Boston, MA}{}{
 \begin{itemize}
-\item Spearheaded Unified Search consolidation project, improving response times by 40\%
-\item Implemented versioning system supporting 30+ service combinations
-\item Led security audit and optimization of core middleware components
+\item Mentored over 20 junior engineers and conducted senior technical interviews.
+\item Main developer of the Rate Management System for IHG, processing millions of daily rate calculations.
+\item I put in place a production monitoring platform with ELK stack using data from a custom C++ logger class that computedfunciton execution times using RAII that ended up beign widely used across multiple departments for performance monitoring.
+\item Developed an internal DB visualization tool using javscript, python and d3.js that reduced debugging time considerably.
+\item \textbf{Tech Stack:} C++14/17, STL, Boost, Python, Oracle, ELK Stack, d3.js, Linux
 \end{itemize}
-\textbf{Technology Stack:} C++11, Oracle, Python, Shell scripting, Linux, Git}
+}
 
-\section{Technical Skills}
-\cvitem{Languages}{Python (asyncio), C++14/17 (STL, Boost), JavaScript}
-\cvitem{Cloud \& DevOps}{AWS (Lambda, ECS, API Gateway), Terraform, Docker, Kubernetes}
-\cvitem{Databases}{PostgreSQL, Snowflake, Oracle, MySQL, BigQuery, Redis}
-\cvitem{Frameworks}{Tornado, Flask, Vue.js, Bootstrap, D3.js}
-\cvitem{Methodologies}{Scrum (Certified), Kanban, Agile Development}
+\cventry{September 2010 -- July 2014}{Software Developer}{Amadeus S.A.S}{Nice, France}{}{
+\begin{itemize}
+\item Led Unified Search consolidation project, improving response times by 40\%.
+\item Conducted a refactor of 30+ services to implement API versioning.
+\item Conducted security audits and performance optimization for key middleware.
+\item \textbf{Tech Stack:} C++11, Oracle, Python, Shell scripting, Linux, Git
+\end{itemize}
+}
+
+\section{Side Projects}
+\cventry{April 2025 -- Present}{Web developer}{Virikes}{Spain}{}{
+\begin{itemize}
+\item Delivered a website for dental clinic in Next.js and deployed it in Vercel. (\url{https://abaddental.vercel.app} )
+\item Learned by doing a website for job tracking management in Next.js with a FastAPI python backend and deployed it in Vercel.(\url{https://jobsherpa.vercel.app})
+\item \textbf{Tech Stack:} Next.js, React.js, SQL, python FastAPI, Vercel
+\end{itemize}
+}
+
+\cventry{October 2012 -- November 2016}{Founder}{Scan And App}{Nice, France}{}{
+\begin{itemize}
+\item Android app and backend system that allow users to generate QR codes and set them up as alerts, chats or redirects for a website.
+\item In charge of all the development (Android application, backend services and database management
+\item \textbf{Tech Stack:} Python, Tornado, mysql, Android Javascript.
+\end{itemize}
+}
+
+\section{Skills}
+\cvitem{Languages}{Python (asyncio), C++14/17, JavaScript (React.js), Next.js}
+\cvitem{Cloud \& DevOps}{AWS (Lambda, ECS, API Gateway), Docker, Kubernetes, Terraform}
+\cvitem{Data \& Storage}{PostgreSQL, BigQuery, Snowflake, Redis, MySQL, Oracle}
+\cvitem{Frameworks \& Tools}{Flask, Tornado, Bootstrap, D3.js, Jenkins, Git, ELK, Jira}
+\cvitem{Practices}{Agile (Certified Scrum Master), CI/CD (Continuous Integration / Continuous Delivery), TDD (Test-Driven Development), System Observability}
 
 \section{Education}
-\cventry{2009--2010}{Master in Security, Cryptology and Coding of Information Systems}{ENSIMAG}{Grenoble, France}{}{}
+\cventry{2009--2010}{Master's Degree in Security, Cryptology and Coding of Information Systems}{ENSIMAG}{Grenoble, France}{}{}
 \cventry{2008--2010}{Double Degree, Information Systems Engineering}{ENSIMAG}{Grenoble, France}{}{}
 \cventry{2001--2008}{Computer Engineering}{Universidad Politécnica de Madrid}{Madrid, Spain}{}{}
 
-\section{Certifications}
+\section{Certifications \& Training}
 \cvitem{2017}{Management Development for New Managers - Amadeus}
-\cvitem{2015}{MongoDB Certification}
-\cvitem{2014}{Certified Scrum Master}
+\cvitem{2015}{MongoDB University Certification}
+\cvitem{2014}{Certified Scrum Master (CSM)}
 \cvitem{2013}{Oracle Performance Optimization}
 
 \section{Languages}
@@ -84,4 +119,8 @@
 \cvlanguage{French}{Bilingual}{}
 \cvlanguage{English}{Fluent}{}
 
+\section{Keywords}
+\cvitem{Keywords}{Python, C++, Docker, AWS Lambda, Terraform, Microservices, Event-Driven Architecture, PostgreSQL, Redis, MySQL, Snowflake, Git, CI/CD, TDD, Agile, Distributed Systems, Vue.js, Flask, System Observability, Kubernetes, BigQuery, API Gateway, D3.js, Jenkins, Jira, ELK Stack}
+
 \end{document}
+
